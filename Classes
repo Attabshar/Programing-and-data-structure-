@@ -1,0 +1,54 @@
+```python
+
+Class Square:
+
+    Def __init__(self, size=0):
+
+        If not isinstance(size, int):
+
+            Raise TypeError(“size must be an integer”)
+
+        Elif size < 0:
+
+            Raise ValueError(“size must be ≥ 0”)
+
+        Else:
+
+            Self.__size = size
+
+
+
+    Def area(self):
+
+        Return self.__size ** 2
+
+
+
+    @property
+
+    Def size(self):
+
+        Return self.__size
+
+
+
+    @size.setter
+
+    Def size(self, value):
+
+        If not isinstance(value, int):
+
+            Raise TypeError(“size must be an integer”)
+
+        Elif value < 0:
+
+            Raise ValueError(“size must be ≥ 0”)
+
+        Else:
+
+            Self.__size = value
+
+```
+
+
+
